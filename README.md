@@ -56,10 +56,10 @@ function hide_show_other_institutions(options) {
 // hide/show other institutions add toggle button
 function hide_show_other_institutions_add_button() {
   if(hide_show_other_institutions_default_state == "visible") {
-    angular.element(document.querySelector('md-tabs')).removeClass("hide");
+    angular.element(document.querySelector('prm-alma-more-inst md-tabs')).removeClass("hide");
     angular.element(document.getElementsByClassName('hide_show_other_institutions_container')).html('<button class="hide_show_other_institutions_button" onclick="hide_show_other_institutions_toggle()">'+hide_show_other_institutions_hide_libraries_button_label+'</button>');
   } else {
-    angular.element(document.querySelector('md-tabs')).addClass("hide");
+    angular.element(document.querySelector('prm-alma-more-inst md-tabs')).addClass("hide");
     angular.element(document.getElementsByClassName('hide_show_other_institutions_container')).html('<button class="hide_show_other_institutions_button" onclick="hide_show_other_institutions_toggle()">'+hide_show_other_institutions_show_libraries_button_label+'</button>');
   }
   // place button above list of libraries 
@@ -70,11 +70,11 @@ function hide_show_other_institutions_add_button() {
 
 // hide/show other institutions toggle visibility of other institutions list
 function hide_show_other_institutions_toggle() {
-  if(angular.element(document.querySelector('md-tabs')).hasClass("hide")) {
-    angular.element(document.querySelector('md-tabs')).removeClass("hide");
+  if(angular.element(document.querySelector('prm-alma-more-inst md-tabs')).hasClass("hide")) {
+    angular.element(document.querySelector('prm-alma-more-inst md-tabs')).removeClass("hide");
     angular.element(document.getElementsByClassName('hide_show_other_institutions_button')).text(hide_show_other_institutions_hide_libraries_button_label);
   } else {
-    angular.element(document.querySelector('md-tabs')).addClass("hide");
+    angular.element(document.querySelector('prm-alma-more-inst md-tabs')).addClass("hide");
     angular.element(document.getElementsByClassName('hide_show_other_institutions_button')).text(hide_show_other_institutions_show_libraries_button_label);
   }
 }
