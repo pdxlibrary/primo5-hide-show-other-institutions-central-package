@@ -1,4 +1,4 @@
-# Primo NUI Hide/Show Other Institutions Toggle Button - Designed for use in a Central Package Setup
+# Primo NUI (Primo Expore) Hide/Show Other Institutions Toggle Button - Designed for use in a Central Package Setup
 
 Adds a toggle button to hide/show other institutions that own the item when viewing a record's details in Ex Libris Primo NUI (Primo 5). Setup designed to use central package and local config
 
@@ -90,7 +90,9 @@ Basic Usage (uses centrally managed default settings):
 
 ```js
 
-hide_show_other_institutions();
+angular.element(document).ready(function(){
+	hide_show_other_institutions();
+})
 
 ```
 
@@ -105,15 +107,17 @@ Example using all three optional parameters:
 
 ```js
 
-hide_show_other_institutions({
-  'default_state': 'visible',
-  'show_libraries_button_label': 'SHOW',
-  'hide_libraries_button_label': 'HIDE'
-});
+angular.element(document).ready(function(){
+	hide_show_other_institutions({
+	  'default_state': 'visible',
+	  'show_libraries_button_label': 'SHOW',
+	  'hide_libraries_button_label': 'HIDE'
+	});
+})
 
 ```
 
-These code snippets can be added anywhere in the local custom.js file as long as they are outside the closure.
+These code snippets can be added anywhere in the local custom.js file.
 
 ***************
 
