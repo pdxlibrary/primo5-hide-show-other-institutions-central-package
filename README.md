@@ -91,7 +91,7 @@ Basic Usage (uses centrally managed default settings):
 ```js
 
 angular.element(document).ready(function(){
-	hide_show_other_institutions();
+  hide_show_other_institutions();
 })
 
 ```
@@ -108,11 +108,11 @@ Example using all three optional parameters:
 ```js
 
 angular.element(document).ready(function(){
-	hide_show_other_institutions({
-	  'default_state': 'visible',
-	  'show_libraries_button_label': 'SHOW',
-	  'hide_libraries_button_label': 'HIDE'
-	});
+  hide_show_other_institutions({
+    'default_state': 'visible',
+    'show_libraries_button_label': 'SHOW',
+    'hide_libraries_button_label': 'HIDE'
+  });
 })
 
 ```
